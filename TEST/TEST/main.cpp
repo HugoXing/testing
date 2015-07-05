@@ -8,8 +8,24 @@
 
 #include <iostream>
 
+extern int i;
+extern float f(float);
+
+float b;
+float f(float a){
+    return a + 0.1;
+}
+
+int i;
+int h(int x){
+    return x*1;
+}
+
+
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World! let's rock\n";
-    return 0;
+    b = 0;
+    i = 2;
+    f(b);
+    h(i);
 }
